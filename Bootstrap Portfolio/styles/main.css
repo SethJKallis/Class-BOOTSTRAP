@@ -1,0 +1,129 @@
+/* RESETS*/
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #333;
+    color: papayawhip;
+}
+
+/* END RESET */
+
+/* UTILITY CLASSES */
+.nowrap{
+    white-space: nowrap;
+}
+
+/* END UTILITY CLASSES */
+
+/* nav{
+    border: 2px solid red;
+    width: 100%;
+    height: 5rem;
+} */
+
+.navbar .container-fluid .siteLogo{
+    width: 4rem;
+    object-fit: contain;
+    animation: logoRotate 2s linear 0s infinite forwards;
+}
+
+.navbar-toggler-icon{
+    transition: all 0.5s ease 0.1s;
+}
+
+.navbar-toggler-icon:hover{
+    transform: rotate(360deg);
+}
+
+@keyframes logoRotate {
+    from{
+        transform: rotate(0deg);
+        
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes imageRotate {
+    from{
+        transform: rotate(0deg);
+        z-index: -1;
+    }
+    to{
+        transform: rotate(360deg);
+        z-index: -1;
+    }
+}
+
+.navbar-nav li a{
+    object-fit: cover;
+    transition: all 0.25s ease 0.1s;
+    border-radius: 50%;
+    /* border: 2px solid red; */
+}
+
+.navbar-nav li a:hover,
+.navbar-nav li a:focus{
+    font-weight: bolder;
+    transform: scale(1.25);
+    
+
+}
+
+
+.navbar-nav li svg{
+    width: 100%;
+    height: 100%;
+    border: 2px solid #000;
+    padding: 0.25rem;
+    border-radius: 50%;
+    color: #333;
+    transition: all 0.5s ease 0.1s;
+}
+
+.navbar-nav li svg:hover,
+.navbar-nav li svg:focus{
+    background-color: #000;
+    color: whitesmoke;
+}
+
+.figure img{
+    width: 100%;
+}
+
+.profileImage{
+    /* border: 2px solid white; */
+    width: 75%;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.profileImage:hover{
+    animation: imageRotate 2s ease 0.25s 2 alternate both ;
+}
+
+
+.github-link:any-link{
+    padding: 0 0.25rem 0.25rem;
+    text-decoration: none;
+    color: whitesmoke;
+    border: 2px solid whitesmoke;
+    border-radius: 2rem;
+    transition: all 0.5s ease 0.1s;
+}
+
+.github-link:hover,
+.github-link:focus{
+    background-color: whitesmoke;
+    color: #000;
+    font-weight: bolder;
+}
+
+
