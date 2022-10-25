@@ -21,15 +21,19 @@ body{
 
 /* END UTILITY CLASSES */
 
-/* nav{
-    border: 2px solid red;
+header{
+    /* border: 2px solid red; */
     width: 100%;
     height: 5rem;
-} */
+}
+
+nav{
+    /* border: 2px solid blue; */
+    height: auto;
+}
 
 .navbar .container-fluid .siteLogo{
-    width: 4rem;
-    object-fit: contain;
+    width: 3rem;
     animation: logoRotate 2s linear 0s infinite forwards;
 }
 
@@ -54,11 +58,9 @@ body{
 @keyframes imageRotate {
     from{
         transform: rotate(0deg);
-        z-index: -1;
     }
     to{
         transform: rotate(360deg);
-        z-index: -1;
     }
 }
 
