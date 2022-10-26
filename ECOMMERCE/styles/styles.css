@@ -1,3 +1,4 @@
+/* RESET */
 *,
 *::before,
 *::after {
@@ -5,6 +6,12 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body{
+    background-color: grey;
+}
+
+/* END RESET */
 
 nav{
     /* border: 2px solid red; */
@@ -31,7 +38,7 @@ nav .container-fluid ul li svg{
 }
 
 nav .container-fluid ul li svg:hover{
-    background-color: grey;
+    /* background-color: grey; */
     transform: scale(1.5);
 }
 
@@ -55,3 +62,5 @@ nav .container-fluid ul li a div:hover{
     min-width: 25px;
     border-radius: 50%;
 }
+
+
