@@ -8,7 +8,7 @@
 }
 
 body{
-    background-color: #333;
+    background: radial-gradient(#338, #000);
     color: papayawhip;
 }
 
@@ -116,6 +116,7 @@ nav{
     padding: 0 0.25rem 0.25rem;
     text-decoration: none;
     color: whitesmoke;
+    background-color: #000;
     border: 2px solid whitesmoke;
     border-radius: 2rem;
     transition: all 0.5s ease 0.1s;
@@ -128,6 +129,22 @@ nav{
     font-weight: bolder;
 }
 
+.contact-links a:any-link{
+    padding: 0.5em;
+    text-decoration: none;
+    color: whitesmoke;
+    background-color: #000;
+    border: 2px solid #fff;
+    border-radius: 20%;
+    transition: all 0.5s ease 0.1s
+}
+
+.contact-links a:hover,
+.contact-links a:focus{
+    background-color: whitesmoke;
+    color: #000;
+    /* font-weight: bolder; */
+}
 
 footer{
     height: 20px;
@@ -139,3 +156,23 @@ footer{
     bottom: 0;
 }
 
+footer .container{
+    margin-top: 20px;
+}
+
+footer a:any-link {
+    padding: 0.25em;
+    text-decoration: none;
+    color: #fff;
+    background-color: #000;
+    border: 2px solid #fff;
+    border-radius: 35%;
+    transition: all 0.5s ease 0.1s;
+
+}
+
+footer a:hover,
+footer a:focus{
+    color: #000;
+    background-color: #fff;
+}
