@@ -1,0 +1,56 @@
+/* RESETS */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* img{
+    border: 2px solid #000;
+    display: block;
+    width: 75%;
+} */
+/* END RESETS */
+
+
+/* LAYOUT */
+body{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto 1fr 100px;
+}
+
+header,
+main,
+footer{
+    grid-column: 1/-1;
+}
+
+header{
+    background-color: lightgray;
+}
+
+.container{
+    background-color: papayawhip;
+}
+
+/* .container img{
+    width: 100%;
+    margin: auto;
+    display: block;
+} */
+
+@media screen and (max-width:720px) {
+    .container img {
+        width: 100%;
+    }
+    /* footer{
+        display: none;
+    } */
+}
+
+footer{
+    background-color: grey;
+}
